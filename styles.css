@@ -72,6 +72,7 @@ ul {
 
   & li:nth-of-type(2) {
     grid-area: 4 / 1 / 5 / 5;
+    animation: 3s linear infinite forwards rotate--short-line;
   }
 
   & li:nth-of-type(3) {
@@ -91,6 +92,16 @@ ul {
 }
 
 @keyframes rotate-line {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(-180deg);
+  }
+}
+
+@keyframes rotate--short-line {
   0% {
     transform: rotateZ(0deg);
   }
