@@ -46,7 +46,18 @@ ul {
 
   & li {
     display: flex;
+    justify-content: space-between;
     background: red;
+
+    &::before,
+    &::after {
+      content: "";
+      block-size: 100%;
+      aspect-ratio: 1;
+      display: grid;
+      border-radius: 50%;
+      background: currentColor;
+    }
   }
 
   & li:nth-of-type(1) {
