@@ -40,6 +40,12 @@ body {
 .config {
   color: #fff;
   font-size: 64px;
+  --animation-duration: 2.4s;
+}
+
+:where(ul) {
+  --animation-duration: 4s;
+  --animation-timing-function: ease-in-out;
 }
 
 ul {
@@ -48,9 +54,6 @@ ul {
   grid-template-rows: repeat(7, minmax(0, 1fr));
   block-size: 7em;
   inline-size: 7em;
-
-  --animation-duration: 4s;
-  --animation-timing-function: ease-in-out;
 
   & li {
     display: flex;
