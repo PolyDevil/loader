@@ -49,4 +49,11 @@ ul {
     block-size: 4em;
     inline-size: 4em;
   }
+
+  & li:nth-of-type(2) {
+    background: red;
+    box-shadow:
+      0 12em 0 0 red,
+      0 -12em 0 0 red;
+  }
 }
