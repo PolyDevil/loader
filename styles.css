@@ -66,19 +66,19 @@ ul {
 
   & li:nth-of-type(1) {
     grid-area: 4 / 1 / 5 / -1;
-    animation: 3s linear infinite forwards rotate-line;
+    animation: 3s linear infinite forwards rotate--clock-wise;
     opacity: 0;
   }
 
   & li:nth-of-type(2) {
     grid-area: 4 / 1 / 5 / 5;
-    animation: 3s linear infinite forwards rotate--short-line;
+    animation: 3s linear infinite forwards rotate--clock-wise;
     opacity: 0;
   }
 
   & li:nth-of-type(3) {
     grid-area: 4 / 4 / 5 / -1;
-    animation: 3s linear infinite forwards rotate--short-line;
+    animation: 3s linear infinite forwards rotate--counter-clock-wise;
   }
 
   & li:nth-of-type(4) {
@@ -92,7 +92,7 @@ ul {
   }
 }
 
-@keyframes rotate-line {
+@keyframes rotate--clock-wise {
   0% {
     transform: rotateZ(0deg);
   }
@@ -102,12 +102,12 @@ ul {
   }
 }
 
-@keyframes rotate--short-line {
+@keyframes rotate--counter-clock-wise {
   0% {
     transform: rotateZ(0deg);
   }
 
   100% {
-    transform: rotateZ(-180deg);
+    transform: rotateZ(180deg);
   }
 }
