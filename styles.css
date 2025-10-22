@@ -35,7 +35,9 @@ body {
   align-items: center;
   justify-content: center;
   block-size: 100%;
+}
 
+.config {
   color: #fff;
   font-size: 64px;
 }
