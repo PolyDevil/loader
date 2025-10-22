@@ -110,15 +110,15 @@ ul {
 
 @keyframes rotate--main {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotateZ(0turn);
   }
 
   25% {
-    transform: rotateZ(-180deg);
+    transform: rotateZ(-0.5turn);
   }
 
   100% {
-    transform: rotateZ(-180deg);
+    transform: rotateZ(-0.5turn);
   }
 }
 
@@ -160,19 +160,19 @@ ul {
 
 @keyframes rotate--clock-wise {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotateZ(0turn);
   }
 
   25% {
-    transform: rotateZ(0deg);
+    transform: rotateZ(0turn);
   }
 
   50% {
-    transform: rotateZ(-180deg);
+    transform: rotateZ(-0.5turn);
   }
 
   100% {
-    transform: rotateZ(-180deg);
+    transform: rotateZ(-0.5turn);
   }
 }
 
@@ -230,19 +230,19 @@ ul {
 
 @keyframes rotate--counter-clock-wise {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotateZ(0turn);
   }
 
   50% {
-    transform: rotateZ(0deg);
+    transform: rotateZ(0turn);
   }
 
   75% {
-    transform: rotateZ(-180deg);
+    transform: rotateZ(-0.5turn);
   }
 
   100% {
-    transform: rotateZ(-180deg);
+    transform: rotateZ(-0.5turn);
   }
 }
 
