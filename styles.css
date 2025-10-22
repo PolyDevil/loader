@@ -44,6 +44,8 @@ ul {
   block-size: 28em;
   inline-size: 28em;
 
+  --animation-duration: 4s;
+
   & li {
     display: flex;
     justify-content: space-between;
@@ -66,17 +68,19 @@ ul {
 
   & li:nth-of-type(1) {
     grid-area: 4 / 1 / 5 / -1;
-    animation: 3s linear infinite forwards rotate--main;
+    animation: var(--animation-duration) linear infinite forwards rotate--main;
   }
 
   & li:nth-of-type(2) {
     grid-area: 4 / 1 / 5 / 5;
-    animation: 3s linear infinite forwards rotate--clock-wise;
+    animation: var(--animation-duration) linear infinite forwards
+      rotate--clock-wise;
   }
 
   & li:nth-of-type(3) {
     grid-area: 4 / 4 / 5 / -1;
-    animation: 3s linear infinite forwards rotate--counter-clock-wise;
+    animation: var(--animation-duration) linear infinite forwards
+      rotate--counter-clock-wise;
   }
 
   & li:nth-of-type(4) {
