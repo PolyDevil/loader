@@ -83,13 +83,28 @@ ul {
     grid-area: 4 / 1 / 5 / 5;
     animation: var(--animation-duration) linear infinite forwards
       rotate--clock-wise;
+
+    &::before {
+      animation: var(--animation-duration) linear infinite forwards point--3;
+    }
+
+    &::after {
+      animation: var(--animation-duration) linear infinite forwards point--4;
+    }
   }
 
   & li:nth-of-type(3) {
     grid-area: 4 / 4 / 5 / -1;
     animation: var(--animation-duration) linear infinite forwards
       rotate--counter-clock-wise;
-    opacity: 0;
+
+    &::before {
+      animation: var(--animation-duration) linear infinite forwards point--5;
+    }
+
+    &::after {
+      animation: var(--animation-duration) linear infinite forwards point--6;
+    }
   }
 
   & li:nth-of-type(4) {
@@ -171,6 +186,58 @@ ul {
   }
 }
 
+@keyframes point--3 {
+  0% {
+    opacity: 0;
+  }
+
+  24.999% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  49.999% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes point--4 {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  49.999% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  99.999% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes rotate--counter-clock-wise {
   0% {
     transform: rotateZ(0deg);
@@ -186,5 +253,45 @@ ul {
 
   100% {
     transform: rotateZ(-180deg);
+  }
+}
+
+@keyframes point--5 {
+  0% {
+    opacity: 0;
+  }
+
+  49.999% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  74.999% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes point--6 {
+  0% {
+    opacity: 0;
+  }
+
+  24.999% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
