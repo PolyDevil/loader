@@ -37,14 +37,15 @@ body {
   block-size: 100%;
 
   color: #fff;
+  font-size: 64px;
 }
 
 ul {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   grid-template-rows: repeat(7, minmax(0, 1fr));
-  block-size: 28em;
-  inline-size: 28em;
+  block-size: 7em;
+  inline-size: 7em;
 
   --animation-duration: 4s;
   --animation-timing-function: ease-in-out;
