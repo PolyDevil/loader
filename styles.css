@@ -27,3 +27,26 @@ body {
   list-style-type: "";
   padding: 0;
 }
+
+/* Loader */
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  block-size: 100%;
+}
+
+ul {
+  display: flex;
+  gap: 8em;
+  block-size: 4em;
+
+  & li {
+    display: flex;
+    border-radius: 50%;
+    background: #fff;
+    block-size: 4em;
+    inline-size: 4em;
+  }
+}
