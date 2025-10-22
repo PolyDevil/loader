@@ -45,6 +45,7 @@ ul {
   inline-size: 28em;
 
   --animation-duration: 4s;
+  --animation-timing-function: ease-in-out;
 
   & li {
     display: flex;
@@ -68,42 +69,49 @@ ul {
 
   & li:nth-of-type(1) {
     grid-area: 4 / 1 / 5 / -1;
-    animation: var(--animation-duration) linear infinite forwards rotate--main;
+    animation: var(--animation-duration) var(--animation-timing-function)
+      infinite forwards rotate--main;
 
     &::before {
-      animation: var(--animation-duration) linear infinite forwards point--1;
+      animation: var(--animation-duration) var(--animation-timing-function)
+        infinite forwards point--1;
     }
 
     &::after {
-      animation: var(--animation-duration) linear infinite forwards point--2;
+      animation: var(--animation-duration) var(--animation-timing-function)
+        infinite forwards point--2;
     }
   }
 
   & li:nth-of-type(2) {
     grid-area: 4 / 1 / 5 / 5;
-    animation: var(--animation-duration) linear infinite forwards
-      rotate--clock-wise;
+    animation: var(--animation-duration) var(--animation-timing-function)
+      infinite forwards rotate--clock-wise;
 
     &::before {
-      animation: var(--animation-duration) linear infinite forwards point--3;
+      animation: var(--animation-duration) var(--animation-timing-function)
+        infinite forwards point--3;
     }
 
     &::after {
-      animation: var(--animation-duration) linear infinite forwards point--4;
+      animation: var(--animation-duration) var(--animation-timing-function)
+        infinite forwards point--4;
     }
   }
 
   & li:nth-of-type(3) {
     grid-area: 4 / 4 / 5 / -1;
-    animation: var(--animation-duration) linear infinite forwards
-      rotate--counter-clock-wise;
+    animation: var(--animation-duration) var(--animation-timing-function)
+      infinite forwards rotate--counter-clock-wise;
 
     &::before {
-      animation: var(--animation-duration) linear infinite forwards point--5;
+      animation: var(--animation-duration) var(--animation-timing-function)
+        infinite forwards point--5;
     }
 
     &::after {
-      animation: var(--animation-duration) linear infinite forwards point--6;
+      animation: var(--animation-duration) var(--animation-timing-function)
+        infinite forwards point--6;
     }
   }
 }
