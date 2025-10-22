@@ -106,16 +106,6 @@ ul {
       animation: var(--animation-duration) linear infinite forwards point--6;
     }
   }
-
-  & li:nth-of-type(4) {
-    grid-area: 1 / 4 / 2 / 5;
-    opacity: 0;
-  }
-
-  & li:nth-of-type(5) {
-    grid-area: -2 / 4 / -1 / 5;
-    opacity: 0;
-  }
 }
 
 @keyframes rotate--main {
